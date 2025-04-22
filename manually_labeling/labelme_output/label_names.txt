@@ -1,0 +1,10 @@
+_background_
+Chair
+Door
+Elevator
+People
+Pillar
+Sofa
+Table
+Trash bin
+Wall
