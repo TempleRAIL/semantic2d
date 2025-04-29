@@ -41,8 +41,6 @@ class DataCollection:
         self.vel_odir = data_odir + "/" + "velocities"
         if not os.path.exists(self.vel_odir):
             os.makedirs(self.vel_odir)
-        if not os.path.exists(self.final_goal_local_odir):
-            os.makedirs(self.final_goal_local_odir)
         self.pos_odir = data_odir + "/" + "positions"
         if not os.path.exists(self.pos_odir):
             os.makedirs(self.pos_odir)
