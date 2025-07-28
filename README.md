@@ -38,9 +38,13 @@ cd manually_labeling
 python dataset_collection.py
 ```
 
-*  Manually Labeling: use the Labelme tool to manually label the environment map, as shown in 
+*  Manually Labeling: use the Labelme tool to manually label the environment map and save the *.json file, as shown in 
 ![Labelme example](./manually_labeling/labelme_example.svg "labelme_example") 
 
+Then, export the labeled map images:
+```
+labelme_export_json *.json -o labelme_output
+```
 You will then get an environment map image and its semantically labeled map image, as shown in [labelme_output](./manually_labeling/labelme_output).
 
 *  Automatic Labeling: 
