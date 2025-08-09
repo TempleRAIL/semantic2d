@@ -158,15 +158,17 @@ if __name__ == '__main__':
             labels = labels.detach().cpu().numpy()
 
             # lidar data:
-            r = scans.cpu().detach().numpy().reshape(POINTS) 
+            r = scans.reshape(POINTS) 
             theta = np.linspace(-(135*np.pi/180), 135*np.pi/180, POINTS, endpoint='true')
 
             ## plot semantic label:
             fig = plt.figure(figsize=(12, 12))
             ax = fig.add_subplot(1,1,1, projection='polar', facecolor='seashell')
-            smap = labels.detach().cpu().reshape(POINTS)
+            smap = labels.reshape(POINTS)
 
             # add the background label:
+            theta =  np.insert(theta, -1, np.pi)
+            r = np.insert(r, -1, 1)
             smap = np.insert(smap, -1, 0)
             label_val = np.unique(smap).astype(int)
             print("label_values: ", label_val)
