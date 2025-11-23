@@ -29,7 +29,7 @@ cp manually_labeling/.labelmerc ~/.labelmerc
 ## Semi-Automatic Labeling Usage: 
 *  Dataset Collection: collect and save the data from the rosbag file: assume you have already created the environment map using a mapping package like amcl and collected the raw rosbag data "xx.bag" 
 ```
-# complie the workspace:
+# compile the workspace:
 cd manually_labeling/semantic_data_collection_ws
 catkin_make
 source devel/setup.sh
