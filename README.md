@@ -32,18 +32,27 @@ cd manually_labeling/semantic_data_collection_ws
 catkin_make
 source devel/setup.sh
 # read the rosbag and collect and save the data:
+roscore
 roslaunch laser_line_extraction example.launch
-rosbag play xx.bag
 cd manually_labeling
 python dataset_collection.py
+rosbag play xx.bag
 ```
 
-*  Manually Labeling: use the Labelme tool to manually label the environment map and save the *.json file, as shown in 
+*  Manually Labeling: use the Labelme tool to manually label the environment map and save the *.json file, as shown in
+```
+labelme
+# can use RViz to visualize the RGB image to help label the map:
+roscore 
+rosbag play xx.bag
+rviz
+```
 ![Labelme example](./manually_labeling/labelme_example.svg "labelme_example") 
 
 Then, export the labeled map images:
 ```
 labelme_export_json *.json -o labelme_output
+# command for old version: labelme_json_to_dataset *.json -o labelme_output
 ```
 You will then get an environment map image and its semantically labeled map image, as shown in [labelme_output](./manually_labeling/labelme_output).
 
