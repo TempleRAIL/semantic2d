@@ -7,7 +7,9 @@ The Semantic2D dataset can be found and downloaded at: https://doi.org/10.5281/z
 * Ubuntu 20.04
 * ROS-Noetic
 * Python 3.8
-* Labelme 
+* Labelme
+* scikit-learn
+* tqdm
 
 ## Installation:
 Install Labelme package: 
@@ -31,12 +33,16 @@ cp manually_labeling/.labelmerc ~/.labelmerc
 cd manually_labeling/semantic_data_collection_ws
 catkin_make
 source devel/setup.sh
+
 # read the rosbag and collect and save the data:
 roscore
 roslaunch laser_line_extraction example.launch
 cd manually_labeling
 python dataset_collection.py
 rosbag play xx.bag
+
+# generate the index file for the dataset: revise the dataset path first
+python generateTrainDevSet.py
 ```
 
 *  Manually Labeling: use the Labelme tool to manually label the environment map and save the *.json file, as shown in
