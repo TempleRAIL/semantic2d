@@ -8,7 +8,7 @@ The Semantic2D dataset can be found and downloaded at: https://doi.org/10.5281/z
 
 ## Related Resources
 
-- **Dataset Download:** https://doi.org/10.5281/zenodo.13730200
+- **Dataset Download:** https://doi.org/10.5281/zenodo.18350696
 - **SALSA (Dataset and Labeling Framework):** https://github.com/TempleRAIL/semantic2d
 - **S3-Net (Stochastic Semantic Segmentation):** https://github.com/TempleRAIL/s3_net
 - **Semantic CNN Navigation:** https://github.com/TempleRAIL/semantic_cnn_nav
