@@ -550,7 +550,7 @@ python draw_semantic_label_sample.py
 ```bibtex
 @article{xie2026semantic2d,
   title={Semantic2D: Enabling Semantic Scene Understanding with 2D Lidar Alone},
-  author={Xie, Zhanteng and Pan, Yipeng and Zhang, Yiqiang and Pan, Jia and Dames, Philip},
+  author={Xie, Zhanteng and Pan, Yipeng and Zhang, Yinqiang and Pan, Jia and Dames, Philip},
   journal={arXiv preprint arXiv:2409.09899},
   year={2026}
 }
