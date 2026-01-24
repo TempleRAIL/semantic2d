@@ -541,8 +541,6 @@ python draw_semantic_label_sample.py
 
 ![semantic_lidar_data](demos/semantic_lidar_data_2000.png "semantic_lidar_data_2000")
 
-![labelme_demo](demos/labelme_demo.gif "labelme_demo")
-
 ---
 
 ## Citation
