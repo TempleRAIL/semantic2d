@@ -13,6 +13,12 @@ The Semantic2D dataset can be found and downloaded at: https://doi.org/10.5281/z
 - **S3-Net (Stochastic Semantic Segmentation):** https://github.com/TempleRAIL/s3_net
 - **Semantic CNN Navigation:** https://github.com/TempleRAIL/semantic_cnn_nav
 
+## Demos
+
+| S3-Net Segmentation | Semantic Mapping | Semantic Navigation |
+|:-------------------:|:----------------:|:-------------------:|
+| ![S3-Net Segmentation](demos/1.lobby_s3net_segmentation.gif) | ![Semantic Mapping](demos/2.lobby_semantic_mapping.gif) | ![Semantic Navigation](demos/3.lobby_semantic_navigation.gif) |
+
 ## Table of Contents
 
 1. [Requirements](#requirements)
